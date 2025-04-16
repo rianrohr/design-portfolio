@@ -1,0 +1,114 @@
+@font-face {
+    font-family: body-text;
+    src: url(../fonts/PPNeueMontreal-Regular.ttf);
+  }
+  @font-face {
+    font-family: display1;
+    src: url(../fonts/PPNeueMontreal-Bold.ttf);
+  }
+  @font-face {
+    font-family: display2;
+    src: url(../fonts/PPNeueMontreal-Medium.ttf);
+  }
+  
+  body {
+    font-family: body-text;
+    color: #cbd5e1;
+    background-color: #1c2c3c;
+  }
+  
+  h1 {
+    font-family: display1;
+    color: white;
+  }
+  
+  h2 {
+    font-family: display2;
+    color: white;
+  }
+  
+  
+  /*
+    *************************************************
+    Navigation Bar
+    *************************************************
+  */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Theme toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #cbd5e1;
+  }
+  
+  /* Horizontal nav links */
+  .logo a {
+    text-decoration: none;
+    font-family: body-text;
+   
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+  }
+
+  .logo a:hover {
+    color: #94c6ff;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-family: body-text;
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #94c6ff;
+  }
+
+  /* === Light Mode === */
+  body.light-mode .navbar {
+    color: #0f172a;
+  }
+
+  body.light-mode .theme-toggle {
+    color: #0f172a;
+  }
+
+  body.light-mode .logo a {
+    color: #0f172a;
+  }
+
+  body.light-mode .nav-links a {
+    color: #0f172a;
+  }
+
+  body.light-mode .nav-links a:hover {
+    color: #2563eb;
+  }
+
+  body.light-mode {
+    background-color: #cbd5e1;
+  }

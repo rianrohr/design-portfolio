@@ -7,13 +7,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rianna Rohrbeck - UX Designer</title>
+    <title>rianna rohrbeck - ux designer</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-     
+    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 <body>
     <div id="header-placeholder"></div>
+
+    <main class="home-content">
+        <section class="intro">
+            <div class="project-tile" data-url="/case-studies/gather/gather.html">
+                <img src="images/gather-thumbnail.png" alt="Gather project thumbnail">
+                <h3>Gather</h3>
+              </div>
+
+              <div class="project-tile" data-url="/case-studies/bloom/bloom.html">
+                <img src="images/bloom-thumbnail.png" alt="Bloom project thumbnail">
+                <h3>Bloom</h3>
+              </div>
+
+              <div class="project-tile" data-url="/case-studies/glow/glow.html">
+                <img src="images/glow-thumbnail.png" alt="Glow project thumbnail">
+                <h3>Glow</h3>
+              </div>
+
+              <div class="project-tile" data-url="/case-studies/serenSense/stim.html">
+                <img src="images/serenSense-thumbnail.png" alt="SerenSense project thumbnail">
+                <h3>SerenSense</h3>
+              </div>
+              
+              <div class="project-tile" data-url="/case-studies/cc/cc.html">
+                <img src="images/cc-thumbnail.png" alt="CampusConnect redesign thumbnail">
+                <h3>CampusConnect Redesign</h3>
+              </div>
+              
+            <!-- <a href="/case-studies/gather/gather.html">Gather</a>
+            <a href="/case-studies/bloom/bloom.html">Bloom</a>
+            <a href="/case-studies/glow/glow.html">Glow</a>
+            <a href="/case-studies/serenSense/stim.html">SerenSense</a>
+            <a href="/case-studies/cc/cc.html">CampusConnect Redesign</a> -->
+        </section>
+    </main>
+
+    <div id="project-overlay" class="overlay hidden">
+        <button id="close-overlay">&times;</button>
+        <div class="overlay-content">
+          <iframe src="" id="project-iframe" loading="lazy"></iframe>
+        </div>
+      </div>
+      
+    <div id="footer-placeholder"></div>
 
     <script src="script.js"></script>
 </body>

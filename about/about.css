@@ -1,0 +1,89 @@
+.about-container {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: body-text;
+}
+
+.intro h1 {
+    font-family: display1;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+}
+
+/* === intro image === */
+.intro.with-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.intro-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.intro-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === small screen RESPONSIVE === */
+@media (max-width: 768px) {
+  .intro.with-image {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-text,
+  .intro-image {
+    flex: 1 1 100%;
+  }
+}
+
+/* About block */
+.about-block {
+    margin-bottom: 2.5rem;
+  }
+  
+.about-block h2 {
+    font-family: display2;
+    font-size: 1.1rem;
+    text-transform: lowercase;
+    margin-bottom: 0.5rem;
+    color: #e2e8f0;
+  }
+  
+.about-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+  }
+  
+/* === Light Mode === */
+body.light-mode .intro h1,
+body.light-mode .about-block h2 {
+    color: #1e293b;
+  }
+  
+body.light-mode .intro p,
+body.light-mode .about-block p {
+    color: #475569;
+  }

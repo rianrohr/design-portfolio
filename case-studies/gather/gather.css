@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .case-study {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    font-family: body-text;
+  }
+  
+  .case-study h1 {
+    font-family: display1;
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .case-study h2 {
+    font-family: display2;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: white;
+  }
+  
+  .case-study h3 {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+  }
+  
+  .case-study p,
+  .case-study li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+  }
+  
+  .case-study ul {
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .case-study img.centered {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fade-in */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Scroll TOC */
+  #toc-progress {
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    background: rgba(28, 44, 60, 0.9);
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1000;
+    font-size: 0.9rem;
+    max-width: 180px;
+    backdrop-filter: blur(8px);
+  }
+  
+  #toc-progress a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94c6ff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  #toc-progress a.active,
+  #toc-progress a:hover {
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+  #toc-progress .num {
+    background: #334155;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #38bdf8; /* Tailwind sky-400 / change if needed */
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.2s ease-out;
+  }
+  
+  
